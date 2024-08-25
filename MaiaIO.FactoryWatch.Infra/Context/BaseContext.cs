@@ -14,7 +14,7 @@ namespace MaiaIO.FactoryWatch.Infra.Context
     {
 
        public DbSet<ProcessLine> Lines;
-       public DbSet<Machine> Machines;
+       public DbSet<MachineLine> Machines;
        public DbSet<Device> Devices;
 
         public BaseContext(DbContextOptions options) : base(options) { }
@@ -36,7 +36,7 @@ namespace MaiaIO.FactoryWatch.Infra.Context
 
             });
 
-            modelBuilder.Entity<Machine>(c =>
+            modelBuilder.Entity<MachineLine>(c =>
             {
 
                 c.ToTable("Machines");

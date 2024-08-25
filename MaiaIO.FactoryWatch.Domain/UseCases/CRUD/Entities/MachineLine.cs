@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaiaIO.FactoryWatch.Domain.UseCases.CRUD.Entities
 {
-    public class Machine : Entity
+    public class MachineLine : Entity
     {
 
         public string name { get; set; }

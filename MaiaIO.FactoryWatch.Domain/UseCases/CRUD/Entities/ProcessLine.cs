@@ -14,7 +14,7 @@ namespace MaiaIO.FactoryWatch.Domain.UseCases.CRUD.Entities
         public int lineSeq { get; set; }
         public string name { get; set; }
         public string description { get; set; }
-        public IEnumerable<Machine> machines { get; set; }
+        public IEnumerable<MachineLine> machines { get; set; }
         public DateTime lastMaintence { get; set; }
         public MaintenceCode lastMainteceCode { get; set; }
 
